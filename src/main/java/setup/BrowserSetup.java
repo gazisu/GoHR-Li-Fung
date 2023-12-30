@@ -10,18 +10,18 @@ public class BrowserSetup {
 	
 	@BeforeSuite
 	public void chromesetup(){
-		System.setProperty("webdriver.chromem.driver", "C:\\Program Files\\Java\\Driver\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\Driver\\chromedriver-win64\\chromedriver.exe");
 		driver= new ChromeDriver();
 		
 	}
 	
 	
 	
-	@AfterSuite
-	public void teardown() {
-		driver.quit();
-	}
-	
+//	@AfterSuite
+//	public void teardown() {
+//		driver.quit();
+//	}
+//	
 	
 
 }
